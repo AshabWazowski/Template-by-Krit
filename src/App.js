@@ -12,22 +12,18 @@ function App() {
 
   return (
     <div className="App">
-    <Box margin='20px 10px'>
-        <IconButton onClick={()=>setOpen(!open)}>
-          <MenuIcon sx={{color:'whitesmoke', fontSize:'30px'}}/>
-        </IconButton>
-    </Box>
       <Box display='flex' justifyContent='center' alignContent='center' width='100%' border='2px solid blue'>
      
-    {/* SIDE PANNEL CONTROL */}
+    {/* SIDE PANNEL CONTROL  "LEFT" */}
       <Box>
-      {open && 
+       
         <SidePannel setOpen={setOpen} open={open}/>
-      }
+      
       </Box>
 
-    {/*COMPOINENT SIDE CONTROL */}
-      <Box>      
+    {/*COMPOINENT SIDE CONTROL "RIGHT" */}
+      <Box border='1px solid purple' width='100%' padding='1rem 5%'> 
+        <h1>Hello World</h1>     
       </Box>
 
 
